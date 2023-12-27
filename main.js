@@ -4,7 +4,7 @@ let coinVal = [
     ['pennies', 1], 
     ['nickles', 5], 
     ['dimes', 10], 
-    ['quarters', 25]
+    ['quarters', 25],
     ['dollars', 100]
 ]; 
 
@@ -22,12 +22,12 @@ function calcChange(input, price, coinVal){
     }
      return changes;   
     }
-function calcCoin(changes, coinVal){
+function calcCoin(changes, coinVal) {
     let coinsNeeded= [];
     for (let i = 0; i < changes.length; i++) {
         let coinCount = Math.floor(changes[i] / coinVal[i][1]);
-        coinsNeeded.push([coinVal[i][0]], coinCount);
-   }
+        coinsNeeded.push([coinVal[i][0], coinCount]);
+    }
    return coinsNeeded;
 }  
 function handleClickEvent(){
