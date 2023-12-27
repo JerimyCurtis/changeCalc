@@ -5,7 +5,11 @@ let coinVal = [
     ['nickles', .05], 
     ['dimes', .10], 
     ['quarters', .25],
-    ['dollars', 1.0]
+    ['$1', 1.0],
+    ['$2', 2.0],
+    ['$5', 5.0],
+    ['$10', 10.0],
+    ['$20', 20.0]
 ]; 
 
 
@@ -40,11 +44,15 @@ function handleClickEvent() {
     console.log(changeDetails);
 
 // document.querySelector('#output').innerHTML = JSON.stringify(coinsNeeded);
-    document.getElementById('dollars-value').innerHTML = changeDetails[0][1]; 
-    document.getElementById('quarters-value').innerHTML = changeDetails[1][1];
-    document.getElementById('dimes-value').innerHTML = changeDetails[2][1];
-    document.getElementById('nickels-value').innerHTML = changeDetails[3][1];
-    document.getElementById('pennies-value').innerHTML = changeDetails[4][1];
+    document.getElementById('20-dollars-value').innerHTML = changeDetails[0][1]
+    document.getElementById('10-dollars-value').innerHTML = changeDetails[1][1]
+    document.getElementById('5-dollars-value').innerHTML = changeDetails[2][1]
+    document.getElementById('2-dollars-value').innerHTML = changeDetails[3][1]
+    document.getElementById('dollars-value').innerHTML = changeDetails[4][1]; 
+    document.getElementById('quarters-value').innerHTML = changeDetails[5][1];
+    document.getElementById('dimes-value').innerHTML = changeDetails[6][1];
+    document.getElementById('nickels-value').innerHTML = changeDetails[7][1];
+    document.getElementById('pennies-value').innerHTML = changeDetails[8][1];
 }
 
 document.querySelector('#calculate-change').addEventListener('click', handleClickEvent);
