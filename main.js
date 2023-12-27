@@ -1,11 +1,11 @@
 //the goal is to create a calculator that outputs the correct change
 //the change needs to be defined in a way that can be iterated
 let coinVal = [
-    ['pennies', 1], 
-    ['nickles', 5], 
-    ['dimes', 10], 
-    ['quarters', 25],
-    ['dollars', 100]
+    ['pennies', .01], 
+    ['nickles', .05], 
+    ['dimes', .10], 
+    ['quarters', .25],
+    ['dollars', 1.0]
 ]; 
 
 
