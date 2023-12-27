@@ -5,22 +5,28 @@ let coinVal = [
     ['nickles', 5], 
     ['dimes', 10], 
     ['quarters', 25]
+    ['dollars', 100]
 ]; 
 
-var input = parseFloat(promt("Enter the amount of money recieved."));
-var price = parseFloat(prompt("Enter the price to customer."));
+var input = parseFloat(document.getElementById('Amount'));
+var price = parseFloat(dicument.getElementById)('Price');
 //the obj needs to be iterated for a later function that used both key&value
 //A for loop iterates and allows for a function to be completed after
 function calcChange(input, price, coinVal){
     for (let i = 0; i < coinVal.length; i++){
-        let coin=coinVal[i][1]
+        let change=coinVal[i][1]
         if (input >= price){
             change = input % price;    
         }
-        return change 
+        changes.push(change);
+
+function calcCoin(changes, coinVal){
+    let coinsNeeded= [];
+            for (let i = 0; i < changes.length; i++) {
+                let coinCount = Math.floor(changes[i] / coinVal[i][1]);
+                coinsNeeded.push([coinVal[i][0]], coinCount);
+            }
+            return coinsNeeded;
     }
-    
 }
-
-
-
+}
