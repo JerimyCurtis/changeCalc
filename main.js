@@ -32,15 +32,20 @@ function calcChange(input, price, coinVal){
 }  
     return changeDetails;
 }
-// function handleClickEvent(){
-//     let input = parseFloat(document.getElementById('amount-received').value);
-//     let price = parseFloat(document.getElementById('amount-due').value);
-//     let changes = calcChange(input, price, coinVal);
-//     let coinsNeeded = calcCoin(changes, coinVal)
+function calcTotal (changeDetails) {
+    let total = 0;
+    for (let i = 0; i < changeDetails.length; i++) {
+        total += changeDetails[i][1] * coinVal[i][1];
+    }
+    return total.toFixed(2);
+}
+
+
 function handleClickEvent() {
     let input = parseFloat(document.getElementById('amount-received').value);
     let price = parseFloat(document.getElementById('amount-due').value);
     let changeDetails = calcChange(input, price, coinVal);
+    let totalChange = calcTotal(changeDetails);
     console.log(changeDetails);
 
 // document.querySelector('#output').innerHTML = JSON.stringify(coinsNeeded);
@@ -53,6 +58,7 @@ function handleClickEvent() {
     document.getElementById('dimes-value').innerHTML = changeDetails[6][1];
     document.getElementById('nickels-value').innerHTML = changeDetails[7][1];
     document.getElementById('pennies-value').innerHTML = changeDetails[8][1];
+    document.getElementById('total-value').innerHTML = totalChange;
 }
 
 document.querySelector('#calculate-change').addEventListener('click', handleClickEvent);
