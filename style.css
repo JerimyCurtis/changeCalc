@@ -1,5 +1,8 @@
 html{
     background-color: #939e93;
+    position:relative;
+    min-width: fit-content;
+    align-items: center;
 }
 ::-webkit-input-placeholder{
     color: aliceblue;
@@ -21,15 +24,11 @@ input {
     background-color: #5b835b;
     padding: 10px;
     margin: 5px;
-    
-}
+    }
 #placeholder{
     color:aliceblue;
 }
 
-p {
-    
-}
 #twnty-dollars-output {
     font-size:x-large;
     background-image: url(img/twn.jpg);
