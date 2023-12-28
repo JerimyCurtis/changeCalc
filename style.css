@@ -1,7 +1,9 @@
 html{
     background-color: #939e93;
 }
-
+::-webkit-input-placeholder{
+    color: aliceblue;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -19,6 +21,10 @@ input {
     background-color: #5b835b;
     padding: 10px;
     margin: 5px;
+    
+}
+#placeholder{
+    color:aliceblue;
 }
 
 p {
@@ -98,7 +104,7 @@ p {
 }
 #total-output{
     font-size:x-large;
-    padding-left:38px;
+    padding-right:115px;
 }
 button {
     padding: 10px;
