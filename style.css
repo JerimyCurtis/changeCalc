@@ -1,5 +1,5 @@
 html{
-    background-color: #00800;
+    background-color: #939e93;
 }
 
 
@@ -10,31 +10,108 @@ body {
 }
 
 h1 {
-    color: #cc1919;
+    color: #392e2e;
 }
 
 input {
+    color:azure;
+    font-size: large;
+    background-color: #5b835b;
     padding: 10px;
     margin: 5px;
 }
 
 p {
-    margin: 5px;
+    
 }
-
+#twnty-dollars-output {
+    font-size:x-large;
+    background-image: url(img/twn.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:calc(55%);
+    padding-right: 50px;
+}
+#ten-dollars-output {
+    font-size:x-large;
+    background-image: url(img/ten.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 45px;
+}
+#fiv-dollars-output {
+    font-size:x-large;
+    background-image: url(img/fiv.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:calc(55%);
+    padding-right: 33px;
+}
+#two-dollars-output {
+    font-size:x-large;
+    background-image: url(img/two.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 30px;
+}
+#dollars-output {
+    font-size:x-large;
+    background-image: url(img/one.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 30px;
+}
+#quarters-output {
+    font-size:x-large;
+    background-image: url(img/quar.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 88px;
+}
+#dimes-output {
+    font-size:x-large;
+    background-image: url(img/dim.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 60px; 
+}
+#nickels-output {
+    font-size:x-large;
+    background-image: url(img/nic.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: calc(55%);
+    padding-right: 63px;
+}
+#pennies-output {
+    font-size:x-large;
+    background-image: url(img/pen.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:calc(55%) ;
+    padding-right: 63px;
+}
+#total-output{
+    font-size:x-large;
+    padding-left:38px;
+}
 button {
     padding: 10px;
-    background-image: url(img/reg.jpg); */
-    background-color: #008000;
+    background-image: url(img/reg.jpg);
+    background-color:#5b835b ;
     background-size: contain;
     width: 150px;
-    height: 200px;
-    color: #008000;
+    height: 200px;;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:#939e93;
 }
