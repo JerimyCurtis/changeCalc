@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Change Calculator</title>
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <h1>Change Calculator</h1>
     <input id="amount-received" type="number" step="0.01" placeholder="Amount Given">
     <input id="amount-due" type="number" step="0.01"  placeholder="Price">
-    <p id="20-dollars-output">$20:  <span id="20-dollars-value"></span></p>
-    <p id="10-dollars-output">$10:  <span id="10-dollars-value"></span></p>
+    <p id="20-dollars-output">$20: <span id="20-dollars-value"></span></p>
+    <p id="10-dollars-output">$10: <span id="10-dollars-value"></span></p>
     <p id="5-dollars-output">$5:  <span id="5-dollars-value"></span></p>
     <p id="2-dollars-output">$2:  <span id="2-dollars-value"></span></p>
     <p id="dollars-output">$1:  <span id="dollars-value"></span></p>
@@ -17,8 +19,8 @@
     <p id="dimes-output">Dimes:  <span id="dimes-value"></span></p>
     <p id="nickels-output">Nickels:  <span id="nickels-value"></span></p>
     <p id="pennies-output">Pennies:  <span id="pennies-value"></span></p>
-    
-    <button id="calculate-change">Calculate</button>
+  
+    <button id="calculate-change"></button>
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>

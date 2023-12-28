@@ -1,0 +1,40 @@
+html{
+    background-color: #00800;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #cc1919;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    background-image: url(img/reg.jpg); */
+    background-color: #008000;
+    background-size: contain;
+    width: 150px;
+    height: 200px;
+    color: #008000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
